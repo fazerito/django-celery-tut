@@ -3,7 +3,7 @@ from celery.task.schedules import crontab
 from celery.decorators import periodic_task
 from .utils import save_weather_data
 
-@periodic_task(run_every=(crontab(minute='*/1')))
+@periodic_task(run_every=(crontab(minute='*/15')))
 def task_get_weather_periodic():
     save_weather_data(None)
 
