@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 CELERY_BROKER_URL = 'redis://localhost:6379'
-OPENWEATHER_API_KEY = '6b04f2d2a69b035387523ef25ebf216a'
+OPENWEATHER_API_KEY = ''  # Not the best practice. Keep API KEY in environment variables
 # Application definition
 
 INSTALLED_APPS = [
